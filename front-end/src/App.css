@@ -1,9 +1,121 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-body {
-  font-family: "Roboto", sans-serif;
+:root {
+  /* --background-color-body: #1c1917;
+  --background-color1: #292524; */
+  --background-body: #343a40;
+  --background-card: #37404a;
 }
 
-.navbar-brand {
-  font-size: 24px;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-body);
+  /* background-color: #343a40; */
+}
+
+.jumbotron {
+  background-color: var(--background-card);
+  opacity: 75%;
+  color: white;
+}
+
+#card-container {
+  background-color: var(--background-card);
+}
+
+#card-container .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  /* line-height: 42px; */
+  margin-top: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.card img {
+  object-fit: cover;
+  height: 240px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.card img:hover {
+}
+
+.card .card-title {
+  /* margin-top: -20px; */
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+  bottom: 0px;
+  background-color: rgb(0 0 0 / 71%);
+  border-radius: 0 0 7px 7px;
+}
+
+.card .card-text {
+  /* line-height: 119.19%; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+  color: #ffff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card .card-text:hover {
+  font-weight: 500;
+  /* line-height: 119.19%; */
+  color: #0acf97;
+  transition: all ease 0.5s;
+}
+
+.play-button {
+  background-color: #0acf97;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  overflow: auto; /* Clear the float */
+}
+
+.container img {
+  float: left;
+  margin-right: 10px; /* Add some spacing between image and text */
+}
+
+#top-drama img {
+  height: 70px;
+}
+
+#top-drama .title {
+  color: #fff;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+#top-drama span {
+  color: #c0c0c0af;
+  margin-top: -15px;
+  margin-bottom: 13px;
 }
